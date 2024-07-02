@@ -27,7 +27,7 @@ a.fit()
 a.update()
 a.plot()
 a.print_pars()
-
+a.save()
 #%%
 Despues = np.loadtxt('D.txt',skiprows=12)
 H_D  = Despues[:,0] #Gauss
@@ -45,7 +45,7 @@ b.fit()
 b.update()
 b.plot()
 b.print_pars()
-
+b.save()
 #%%
 fig,ax=plt.subplots(figsize=(7,4.66),constrained_layout=True)
 ax.plot(a.X,a.Y,'o-',label='A')
